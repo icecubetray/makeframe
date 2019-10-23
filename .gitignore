@@ -1,0 +1,10 @@
+# Ignore everything.
+*
+!*/
+
+# But accept these patterns.
+!*.mk
+
+# As well as repo files.
+!.gitignore
+!*.md
