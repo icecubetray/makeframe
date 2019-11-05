@@ -4,6 +4,7 @@
 
 # But accept these patterns.
 !*.mk
+!bin/*.sh
 
 # As well as repo files.
 !.gitignore
