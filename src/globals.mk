@@ -29,3 +29,6 @@ CFLAGS += $(CFLAGS_EXTRA)
 
 # Append PROFILE-specific cflags to CFLAGS.
 CFLAGS += $(CFLAGS_$(call TransformProfileName,$(PROFILE)))
+
+# Append include directories from INCLUDES if any
+CFLAGS += $(foreach inc,$(INCLUDES),-I"$(inc)")
