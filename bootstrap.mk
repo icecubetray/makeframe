@@ -6,4 +6,5 @@ include \
 	$(DIR_SELF)/src/globals.mk \
 	$(DIR_SELF)/src/functions.mk \
 	$(DIR_SELF)/src/targets.mk \
-	$(DIR_SELF)/src/phonies.mk
+	$(DIR_SELF)/src/phonies.mk \
+	$(DIR_SELF)/src/prefilled.mk
