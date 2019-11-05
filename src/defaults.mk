@@ -1,3 +1,13 @@
+# If DEFAULT_TARGET is not set, default to 'all'.
+ifeq (,$(DEFAULT_TARGET))
+	DEFAULT_TARGET = all
+endif
+
+# Should be the first target in the file, and thus the default for Make.
+PHONIES += default
+default: $(DEFAULT_TARGET)
+
+
 # If PROJECT_VERSION is emtpy, override it to WILD.
 ifeq (,$(PROJECT_VERSION))
 PROJECT_VERSION = WILD
