@@ -1,3 +1,3 @@
 ifeq (,$(OBJECTS))
-	OBJECTS = $(call GetObjects,$(PROJECT_SOURCE))
+OBJECTS = $(call GetObjects,$(PROJECT_SOURCE))
 endif
