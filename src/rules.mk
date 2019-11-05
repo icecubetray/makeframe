@@ -16,4 +16,4 @@ dump-state:
 	@echo 'LD                   = $(LD)'
 	@echo 'CFLAGS               = $(CFLAGS)'
 	@echo
-	@echo 'OBJECTS              = $(call GetObjects $(PROJECT_SOURCE))'
+	@echo 'OBJECTS              = $(call GetObjects,$(PROJECT_SOURCE))'
