@@ -33,3 +33,14 @@ export-includes:
 			'$(DIR_SELF)/bin/mdcp.sh' \
 			'$(PROJECT_DIST_INCLUDE)' \
 			'$(PROJECT_SOURCE)';
+
+
+
+
+PHONIES += clean-objects
+clean-objects:
+	find \
+		'$(PROJECT_SOURCE)' \
+			-type f \
+			-name '*.o' \
+			-delete;
