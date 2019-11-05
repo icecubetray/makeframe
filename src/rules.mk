@@ -17,3 +17,17 @@ dump-state:
 	@echo 'CFLAGS               = $(CFLAGS)'
 	@echo
 	@echo 'OBJECTS              = $(call GetObjects,$(PROJECT_SOURCE))'
+
+
+PHONIES += export-includes
+export-includes:
+	find \
+		'$(PROJECT_SOURCE)' \
+			-type f \
+			-name '*.h' \
+			-print0 \
+	| xargs --null \
+		'$(DIR_SELF)/bin/export-dist.sh' \
+			'$(DIR_SELF)/bin/mdcp.sh' \
+			'$(PROJECT_DIST_INCLUDE)' \
+			'$(PROJECT_SOURCE)';
