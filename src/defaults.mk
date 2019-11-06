@@ -8,6 +8,12 @@ PHONIES += default
 default: $(DEFAULT_TARGET)
 
 
+# If PROJECT_NAME is not set, set a default.
+ifeq (,$(PROJECT_NAME))
+PROJECT_NAME = whatchamacallit
+endif
+
+
 # If PROJECT_VERSION is emtpy, override it to WILD.
 ifeq (,$(PROJECT_VERSION))
 PROJECT_VERSION = WILD

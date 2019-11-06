@@ -1,4 +1,4 @@
-PROJECT_NAME = whatchamacallit
+# PROJECT_NAME = whatchamacallit
 PROJECT_VERSION = $(shell git rev-parse HEAD 2>/dev/null)
 # PROJECT_SOURCE =
 # PROJECT_DIST =
