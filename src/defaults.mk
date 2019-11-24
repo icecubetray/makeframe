@@ -1,6 +1,6 @@
 # If DEFAULT_TARGET is not set, default to 'all'.
 ifeq (,$(DEFAULT_TARGET))
-	DEFAULT_TARGET = all
+DEFAULT_TARGET = all
 endif
 
 # Should be the first target in the file, and thus the default for Make.
