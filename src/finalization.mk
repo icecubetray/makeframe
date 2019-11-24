@@ -1,0 +1,2 @@
+# Declare phonies.
+.PHONY: $(PHONIES)

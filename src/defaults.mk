@@ -39,3 +39,8 @@ endif
 ifeq (,$(CFLAGS))
 CFLAGS = -pipe -march=native -Wall
 endif
+
+
+ifeq (,$(OBJECTS))
+OBJECTS = $(call GetObjects,$(PROJECT_SOURCE))
+endif
