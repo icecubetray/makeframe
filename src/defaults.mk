@@ -37,7 +37,7 @@ endif
 
 # If CFLAGS is not set, default to something relatively sane.
 ifeq (,$(CFLAGS))
-CFLAGS = -pipe -march=native -Wall
+CFLAGS = -pipe -march=native -Wall -fPIC
 endif
 
 
